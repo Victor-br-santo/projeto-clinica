@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+.logo{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #020c66;
+  height: 8vh;
+  
+}
+.navList{
+  list-style: none;
+  display: flex;
+}
+
+.navList > li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobileMenu > div{
+  width: 32px;
+  height: 2px;
+  background: #ffffff;
+  margin: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 999px){
+  body{
+    overflow-x: hidden;
+  }
+  .navList{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #020c66;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translate(100%);
+  }
+  .navList > li{
+    margin-left: 0;
+    opacity: 100px;
+  }
+  .mobileMenu{
+    display: block;
+  }
+}
+
+.navList .active{
+  transform: translate(0);
+}
+
+.background-div {
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-image: url('psicologia-home.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  image-resolution: auto;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 40px 0px 0px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+
+.card h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.clinic-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h1 h2{
+  color: #333;
+}
+
+p {
+  color: #666;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+footer {
+  background-color: #18181a;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+
+ul.social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+ul.social-media a:hover {
+  opacity: 0.7;
+}
+
+
