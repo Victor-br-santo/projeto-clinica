@@ -8,10 +8,20 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1 class="cabecalho">Clínica de Psicologia</h1>
-            <a href=""></a>
-        </div>
+        <nav>
+            <a class="logo" href="/">Clinica de Psicologia</a>
+            <div class="mobileMenu">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+            <ul class="navList">
+                <li><a href="/">home</a></li>
+                <li><a href="/">consulta</a></li>
+                <li><a href="https://www.instagram.com/psicoestacioslz/">instagram</a></li>
+                <li><a href="/">contatos</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="main-cadastro">
         <div class="center-tela">
@@ -19,7 +29,7 @@
                 <h1>Cadastro</h1>
                 <div class="textfield">
                     <label for="nome">Nome</label> 
-                    <input type="email" name="nome" placeholder="Nome">
+                    <input type="text" name="nome" placeholder="Nome">
                 </div>
                 <div class="textfield-group-1">
                     <div class="textfield-1">
@@ -28,7 +38,10 @@
                     </div>
                     <div class="textfield-1">
                         <label for="idade">Idade</label>
-                        <input type="number" name="idade" placeholder="Idade">
+                        <select id="idade" name="idade">
+                            <option value="maior">Maior de Idade</option>
+                            <option value="menor">Menor de Idade</option>
+                        </select>
                     </div>
                     <div class="textfield-1">
                         <label for="nascimento">Nascimento</label>
@@ -46,42 +59,41 @@
                     </div>
                     <div class="textfield-2">
                         <label for="profissão">Profissão</label>
-                        <input type="text" name="profissão" placeholder="Profissão">
+                        <input type="text" name="profissao" placeholder="Profissão">
                     </div>
                 </div>
                 <div class="textfield-group-3">
                     <div class="textfield-3">
-                        <label for="renda familiar">Renda Familiar</label>
-                        <input type="tel" name="renda familiar" placeholder="Renda Familiar">
+                        <label for="renda-familiar">Renda Familiar</label>
+                        <input type="tel" name="renda-familiar" placeholder="Renda Familiar">
                     </div>
                     <div class="textfield-3">
-                        <label for="rg/orgão expedidor">RG Orgão Expedidor</label>
-                        <input type="tel" name="rg/orgão expedidor" placeholder="RG ORGÃO EXPEDIDOR">
+                        <label for="rg-orgao-expedidor">RG Orgão Expedidor</label>
+                        <input type="tel" name="rg-orgao-expedidor" placeholder="RG ORGÃO EXPEDIDOR">
                     </div>
                     <div class="textfield-3">
                         <label for="cpf">CPF</label>
                         <input type="tel" name="cpf" placeholder="CPF">
                     </div>
                 </div>
-                    <Div class="textfield">
-                        <Label for="composição familiar">Composição Familiar</Label>
-                        <input type="text"name="composição familiar" placeholder="Composição Familiar">
-                    </Div>
+                <div class="textfield">
+                    <label for="composicao-familiar">Composição Familiar</label>
+                    <input type="text" name="composicao-familiar" placeholder="Composição Familiar">
+                </div>
                 <div class="textfield-group-4">
                     <div class="textfield-4">
-                        <Label for="estado civil">Estado Civil</Label>
-                        <input type="text"name="estado civil" placeholder="Estado Civil">  
+                        <label for="estado-civil">Estado Civil</label>
+                        <input type="text" name="estado-civil" placeholder="Estado Civil">  
                     </div>
                     <div class="textfield-4">
-                        <Label for=" mora com quem?">Mora Com Quem?</Label>
-                        <input type="text"name="mora com quem?" placeholder="Mora Com Quem?">  
+                        <label for="mora-com-quem">Mora Com Quem?</label>
+                        <input type="text" name="mora-com-quem" placeholder="Mora Com Quem?">  
                     </div>
                 </div>
-                <Div class="textfield">
-                    <Label for="endereço">Endereço</Label>
-                    <input type="text"name="endereço" placeholder="Endereço">
-                </Div>
-
+                <div class="textfield">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" placeholder="Endereço">
+                </div>
                 <div class="textfield-group-5">
                     <div class="textfield-5">
                         <label for="bairro">Bairro</label>
@@ -98,22 +110,34 @@
                 </div>
                 <div class="textfield-group-5">
                     <div class="textfield-5">
-                        <label for="tel(residencial)">Tel(Residencial)</label>
-                        <input type="tel" name="tel(residencial)" placeholder="Tel(Residencial)">
+                        <label for="tel-residencial">Tel(Residencial)</label>
+                        <input type="tel" name="tel-residencial" placeholder="Tel(Residencial)">
                     </div>
                     <div class="textfield-5">
-                        <label for="tel(recado)">Tel(Recado)</label>
-                        <input type="tel" name="tel(recado)" placeholder="Tel(Residencial)">
+                        <label for="tel-recado">Tel(Recado)</label>
+                        <input type="tel" name="tel-recado" placeholder="Tel(Recado)">
                     </div>
                     <div class="textfield-5">
-                        <label for="celular">celular</label>
-                        <input type="tel" name="celular" placeholder="celular">
+                        <label for="celular">Celular</label>
+                        <input type="tel" name="celular" placeholder="Celular">
                     </div>
                 </div>
-                <Div class="textfield">
-                    <Label for="email">Email</Label>
-                    <input type="email"name="email" placeholder="Email">
-                </Div>
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="segunda-parte" style="display: none;">
+                    <h2>Segunda Parte do Cadastro</h2>
+                    <div class="textfield">
+                        <label for="nome-pai">Nome do Pai</label>
+                        <input type="text" name="nome-pai" placeholder="Nome do Pai">
+                    </div>
+                    <div class="textfield">
+                        <label for="nome-mae">Nome da Mãe</label>
+                        <input type="text" name="nome-mae" placeholder="Nome da Mãe">
+                    </div>
+                </div>
+                <button type="button" onclick="mostrarSegundaParte()">Próxima Etapa</button>
                 <button type="submit" class="btn-cadastro">Cadastrar</button>
             </div>  
         </div>
